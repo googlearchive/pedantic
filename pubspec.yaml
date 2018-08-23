@@ -1,15 +1,8 @@
-name: sample
+name: pedantic
 version: 1.0.0-dev
-description: A sample library.
+description: How to get the most value from Dart static analysis.
 author: Dart Team <misc@dartlang.org>
-homepage: https://github.com/dart-lang/sample
+homepage: https://github.com/dart-lang/pedantic
 
 environment:
-  sdk: '>=1.24.0 <2.0.0'
-
-dependencies:
-  # lib_name: "^1.2.0"
-
-dev_dependencies:
-  # Narrow this constraint if you use more advanced test features.
-  test: "^0.12.0"
+  sdk: '>=2.0.0 <3.0.0'
