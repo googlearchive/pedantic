@@ -36,8 +36,6 @@ Here is how static analysis is used internally at Google:
 The currently enabled lints can be found in the sample
 [analysis_options.yaml](https://github.com/dart-lang/pedantic/blob/master/lib/analysis_options.yaml).
 
-### Usage
-
 To use those lints you can add a dev dependency in your `pubspec.yaml`:
 
 ```yaml
