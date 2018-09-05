@@ -30,18 +30,33 @@ Here is how static analysis is used internally at Google:
  - Lints are considered and enabled on a case by case basis. When enabling a
    lint we first clean up all pre-existing violations. After it's enabled, any
    attempt to check in a further violation will be blocked.
-   
+
 ## Enabled Lints
 
 The currently enabled lints can be found in the sample
-[analysis_options.yaml](https://github.com/dart-lang/pedantic/blob/master/analysis_options.yaml).
+[analysis_options.yaml](https://github.com/dart-lang/pedantic/blob/master/lib/analysis_options.yaml).
+
+### Usage
+
+To use those lints you can add a dev dependency in your `pubspec.yaml`:
+
+```yaml
+dev_dependencies:
+  pedantic: '1.1.0'
+```
+
+and add an include in your `analysis_options.yaml`:
+
+```yaml
+include: package:pedantic/analysis_options.yaml
+```
 
 ## Unused Lints
 
 The following lints have been considered and will _not_ be enforced:
 
 `always_put_control_body_on_new_line`
-violates Effective Dart "DO format your code using dartfmt". See note about 
+violates Effective Dart "DO format your code using dartfmt". See note about
 Flutter SDK style below.
 
 `always_specify_types`
