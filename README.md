@@ -36,9 +36,15 @@ Here is how static analysis is used internally at Google:
 The currently enabled lints can be found in the sample
 [analysis_options.yaml](https://github.com/dart-lang/pedantic/blob/master/lib/analysis_options.yaml).
 
-To use those lints you can add a dev dependency in your `pubspec.yaml`:
+To use those lints you can add a dependency in your `pubspec.yaml`:
 
 ```yaml
+# If you also need to import `package:pedantic/pedantic.dart`, it's a
+# normal dependency.
+dependencies:
+  pedantic: '1.1.0'
+
+# Or, if you just want `analysis_options.yaml`, it can be a dev dependency.
 dev_dependencies:
   pedantic: '1.1.0'
 ```
