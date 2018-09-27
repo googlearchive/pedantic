@@ -70,6 +70,10 @@ and others. See note about Flutter SDK style below.
 `avoid_as`
 does not reflect standard usage. See note about Flutter SDK style below.
 
+`control_flow_in_finally`
+does not offer enough value: people are unlikely to do this by accident,
+and there are occasional valid uses.
+
 `empty_statements`
 is superfluous, enforcing use of `dartfmt` is sufficient to make empty
  statements obvious.
@@ -79,6 +83,10 @@ is superfluous, enforcing use of `dartfmt` is sufficient to make empty
 
 `prefer_final_locals`
 does not reflect standard usage.
+
+`throw_in_finally`
+does not offer enough value: people are unlikely to do this by accident,
+and there are occasional valid uses.
 
 Note on Flutter SDK Style: some lints were created specifically to support
 Flutter SDK development. Flutter app developers should instead use standard

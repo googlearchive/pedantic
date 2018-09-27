@@ -1,6 +1,11 @@
+## 1.2.0
+
+- Enforce `unawaited_futures`. Stop enforcing `control_flow_in_finally` and
+  `throw_in_finally`.
+
 ## 1.1.0
 
-- Moved `analysis_options.yaml` under `lib` so you can import it directly from
+- Move `analysis_options.yaml` under `lib` so you can import it directly from
   your own `analysis_options.yaml`. See `README.md` for example.
 
 ## 1.0.0
