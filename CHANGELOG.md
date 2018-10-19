@@ -1,3 +1,7 @@
+## 1.3.0
+
+- Enforce `prefer_is_empty`.
+
 ## 1.2.0
 
 - Enforce `unawaited_futures`. Stop enforcing `control_flow_in_finally` and
