@@ -1,3 +1,7 @@
+## 1.4.0
+
+- Enforce `avoid_init_to_null` and `null_closures`.
+
 ## 1.3.0
 
 - Enforce `prefer_is_empty`.
