@@ -55,6 +55,9 @@ and add an include in your `analysis_options.yaml`:
 include: package:pedantic/analysis_options.yaml
 ```
 
+This example uses a pinned version because every added lint rule could break a
+build for projects using it.
+
 ## Unused Lints
 
 The following lints have been considered and will _not_ be enforced:
