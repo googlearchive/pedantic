@@ -42,11 +42,11 @@ To use those lints you can add a dependency in your `pubspec.yaml`:
 # If you also need to import `package:pedantic/pedantic.dart`, it's a
 # normal dependency.
 dependencies:
-  pedantic: '1.1.0'
+  pedantic: '1.4.0'
 
 # Or, if you just want `analysis_options.yaml`, it can be a dev dependency.
 dev_dependencies:
-  pedantic: '1.1.0'
+  pedantic: '1.4.0'
 ```
 
 and add an include in your `analysis_options.yaml`:
