@@ -1,14 +1,14 @@
 ## 1.5.0
 
 - Enforce three new lint rules:
-  - `[avoid_shadowing_type_parameters]`,
-  - `[empty_constructor_bodies]`,
-  - `[slash_for_doc_comments]` - Violations can be cleaned up with
+  - [`avoid_shadowing_type_parameters`],
+  - [`empty_constructor_bodies`],
+  - [`slash_for_doc_comments`] - Violations can be cleaned up with
     [the formatter]'s `--fix-doc-comments` flag.
 
-[avoid_shadowing_type_parameters]: http://dart-lang.github.io/linter/lints/avoid_shadowing_type_parameters.html
-[empty_constructor_bodies]: http://dart-lang.github.io/linter/lints/empty_constructor_bodies.html
-[slash_for_doc_comments]: http://dart-lang.github.io/linter/lints/slash_for_doc_comments.html
+[`avoid_shadowing_type_parameters`]: http://dart-lang.github.io/linter/lints/avoid_shadowing_type_parameters.html
+[`empty_constructor_bodies`]: http://dart-lang.github.io/linter/lints/empty_constructor_bodies.html
+[`slash_for_doc_comments`]: http://dart-lang.github.io/linter/lints/slash_for_doc_comments.html
 [the formatter]: https://github.com/dart-lang/dart_style#style-fixes
 
 ## 1.4.0
