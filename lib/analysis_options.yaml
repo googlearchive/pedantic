@@ -13,7 +13,11 @@ linter:
     - avoid_return_types_on_setters
     - avoid_shadowing_type_parameters
     - avoid_types_as_parameter_names
+    - curly_braces_in_flow_control_structures
+    - empty_catches
     - empty_constructor_bodies
+    - library_names
+    - library_prefixes
     - no_duplicate_case_values
     - null_closures
     - prefer_contains
@@ -22,7 +26,9 @@ linter:
     - prefer_is_not_empty
     - recursive_getters
     - slash_for_doc_comments
+    - type_init_formals
     - unawaited_futures
+    - unnecessary_null_in_if_null_operators
     - unrelated_type_equality_checks
     - use_rethrow_when_possible
     - valid_regexps
