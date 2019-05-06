@@ -9,12 +9,12 @@
   - [`type_init_formals`]
   - [`unnecessary_null_in_if_null_operators`]
 
-[`curly_braces_in_flow_control_structures`]: http://dart-lang.github.io/linter/lints/curly_braces_in_flow_control_structures.html
-[`empty_catches`]: http://dart-lang.github.io/linter/lints/empty_catches.html
-[`library_names`]: http://dart-lang.github.io/linter/lints/library_names.html
-[`library_prefixes`]: http://dart-lang.github.io/linter/lints/library_prefixes.html
-[`type_init_formals`]: http://dart-lang.github.io/linter/lints/type_init_formals.html
-[`unnecessary_null_in_if_null_operators`]: http://dart-lang.github.io/linter/lints/unnecessary_null_in_if_null_operators.html
+[`curly_braces_in_flow_control_structures`]: https://dart-lang.github.io/linter/lints/curly_braces_in_flow_control_structures.html
+[`empty_catches`]: https://dart-lang.github.io/linter/lints/empty_catches.html
+[`library_names`]: https://dart-lang.github.io/linter/lints/library_names.html
+[`library_prefixes`]: https://dart-lang.github.io/linter/lints/library_prefixes.html
+[`type_init_formals`]: https://dart-lang.github.io/linter/lints/type_init_formals.html
+[`unnecessary_null_in_if_null_operators`]: https://dart-lang.github.io/linter/lints/unnecessary_null_in_if_null_operators.html
 
 ## 1.5.0
 
@@ -25,9 +25,9 @@
   - [`slash_for_doc_comments`] - Violations can be cleaned up with
     [the formatter]'s `--fix-doc-comments` flag.
 
-[`avoid_shadowing_type_parameters`]: http://dart-lang.github.io/linter/lints/avoid_shadowing_type_parameters.html
-[`empty_constructor_bodies`]: http://dart-lang.github.io/linter/lints/empty_constructor_bodies.html
-[`slash_for_doc_comments`]: http://dart-lang.github.io/linter/lints/slash_for_doc_comments.html
+[`avoid_shadowing_type_parameters`]: https://dart-lang.github.io/linter/lints/avoid_shadowing_type_parameters.html
+[`empty_constructor_bodies`]: https://dart-lang.github.io/linter/lints/empty_constructor_bodies.html
+[`slash_for_doc_comments`]: https://dart-lang.github.io/linter/lints/slash_for_doc_comments.html
 [the formatter]: https://github.com/dart-lang/dart_style#style-fixes
 
 ## 1.4.0
