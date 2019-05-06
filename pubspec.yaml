@@ -1,5 +1,5 @@
 name: pedantic
-version: 1.5.0
+version: 1.6.0
 description: How to get the most value from Dart static analysis.
 author: Dart Team <misc@dartlang.org>
 homepage: https://github.com/dart-lang/pedantic
