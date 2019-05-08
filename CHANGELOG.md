@@ -1,3 +1,9 @@
+## 1.7.0
+
+- Add versioned `analysis_options.yaml` files to the package so it's possible
+  to pin to a version without also pinning the pub dependency. See `README.md`
+  for updated usage guide.
+
 ## 1.6.0
 
 - Enforce six new lint rules:

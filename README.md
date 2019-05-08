@@ -33,30 +33,39 @@ Here is how static analysis is used internally at Google:
 
 ## Enabled Lints
 
-The currently enabled lints can be found in the sample
-[analysis_options.yaml](https://github.com/dart-lang/pedantic/blob/master/lib/analysis_options.yaml).
+The currently enabled lints can be found in
+[analysis_options.1.7.0.yaml](https://github.com/dart-lang/pedantic/blob/master/lib/analysis_options.1.7.0.yaml).
 
-To use those lints you can add a dependency in your `pubspec.yaml`:
+## Using the Lints
+
+To use the lints add a dependency in your `pubspec.yaml`:
 
 ```yaml
-# If you also need to import `package:pedantic/pedantic.dart`, it's a
-# normal dependency.
+# If you use `package:pedantic/pedantic.dart`, add a normal dependency.
 dependencies:
-  pedantic: '1.4.0'
+  pedantic: '1.7.0'
 
 # Or, if you just want `analysis_options.yaml`, it can be a dev dependency.
 dev_dependencies:
-  pedantic: '1.4.0'
+  pedantic: '1.7.0'
 ```
 
-and add an include in your `analysis_options.yaml`:
+then, add an include in your `analysis_options.yaml`. If you want to always
+use the latest version of the lints, add a dependency on the main
+`analysis_options` file:
+
 
 ```yaml
 include: package:pedantic/analysis_options.yaml
 ```
 
-This example uses a pinned version because every added lint rule could break a
-build for projects using it.
+If your continuous build and/or presubmit check lints then they will likely
+fail whenever a new version of `package:pedantic` is released. To avoid this,
+specify a specific version of `analysis_options.yaml` instead:
+
+```yaml
+include: package:pedantic/analysis_options.1.7.0.yaml
+```
 
 ## Unused Lints
 
