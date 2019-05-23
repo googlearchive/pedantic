@@ -14,6 +14,11 @@ Note that everything here fits within the guidelines set out in
 You could think of that document as the _design_ and this package as one
 possible partial _implementation_.
 
+See
+[this Medium article](https://medium.com/dartlang/pedantic-dart-1c7d365510de)
+for more background.
+
+
 ## Using Static Analysis
 
 Here is how static analysis is used internally at Google:
@@ -30,7 +35,7 @@ Here is how static analysis is used internally at Google:
  - Lints are considered and enabled on a case by case basis. When enabling a
    lint we first clean up all pre-existing violations. After it's enabled, any
    attempt to check in a further violation will be blocked.
-
+   
 ## Enabled Lints
 
 The currently enabled lints can be found in
