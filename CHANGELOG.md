@@ -1,3 +1,14 @@
+## 1.8.0
+- Enforce three new lint rules:
+
+  - [`prefer_iterable_whereType`]
+  - [`unnecessary_const`]
+  - [`unnecessary_new`]
+
+[`prefer_iterable_whereType`]: https://dart-lang.github.io/linter/lints/prefer_iterable_whereType.html
+[`unnecessary_const`]: https://dart-lang.github.io/linter/lints/unnecessary_const.html
+[`unnecessary_new`]: https://dart-lang.github.io/linter/lints/unnecessary_new.html
+
 ## 1.7.0
 
 - Add versioned `analysis_options.yaml` files to the package so it's possible

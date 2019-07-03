@@ -35,11 +35,11 @@ Here is how static analysis is used internally at Google:
  - Lints are considered and enabled on a case by case basis. When enabling a
    lint we first clean up all pre-existing violations. After it's enabled, any
    attempt to check in a further violation will be blocked.
-   
+
 ## Enabled Lints
 
 The currently enabled lints can be found in
-[analysis_options.1.7.0.yaml](https://github.com/dart-lang/pedantic/blob/master/lib/analysis_options.1.7.0.yaml).
+[analysis_options.1.8.0.yaml](https://github.com/dart-lang/pedantic/blob/master/lib/analysis_options.1.8.0.yaml).
 
 ## Using the Lints
 
@@ -48,11 +48,11 @@ To use the lints add a dependency in your `pubspec.yaml`:
 ```yaml
 # If you use `package:pedantic/pedantic.dart`, add a normal dependency.
 dependencies:
-  pedantic: ^1.7.0
+  pedantic: ^1.8.0
 
 # Or, if you just want `analysis_options.yaml`, it can be a dev dependency.
 dev_dependencies:
-  pedantic: ^1.7.0
+  pedantic: ^1.8.0
 ```
 
 then, add an include in your `analysis_options.yaml`. If you want to always
@@ -69,7 +69,7 @@ fail whenever a new version of `package:pedantic` is released. To avoid this,
 specify a specific version of `analysis_options.yaml` instead:
 
 ```yaml
-include: package:pedantic/analysis_options.1.7.0.yaml
+include: package:pedantic/analysis_options.1.8.0.yaml
 ```
 
 ## Unused Lints
