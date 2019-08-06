@@ -27,8 +27,7 @@ Here is how static analysis is used internally at Google:
    - The `TODO` hint is a permanent exception.
    - Deprecation hints are a permanent exception. Deprecations are handled
      separately on a case by case basis.
-   - `unnecessary_no_such_method`, `unused_element`, `unused_field` and
-     `unused_local_variable` are allowed.
+   - `unused_element`, `unused_field` and `unused_local_variable` are allowed.
    - When a new SDK version adds new errors, warnings or hints, we either clean
      up everything before switching SDK version or maintain a whitelist of
      allowed violations so it can be gradually cleaned up.
