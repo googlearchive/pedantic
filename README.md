@@ -79,26 +79,111 @@ The following lints have been considered and will _not_ be enforced:
 violates Effective Dart "DO format your code using dartfmt". See note about
 Flutter SDK style below.
 
+`always_put_required_named_parameters_first`
+does not allow for other logical orderings of parameters, such as matching the
+class field order or alphabetical.
+
 `always_specify_types`
 violates Effective Dart "AVOID type annotating initialized local variables"
 and others. See note about Flutter SDK style below.
 
+`avoid_annotating_with_dynamic`
+violates Effective Dart "PREFER annotating with `dynamic` instead of letting
+inference fail".
+
 `avoid_as`
-does not reflect standard usage. See note about Flutter SDK style below.
+does not reflect common usage. See note about Flutter SDK style below.
+
+`avoid_catches_without_on_clauses`
+is too strict, catching anything is useful and common even if not always the
+most correct thing to do.
+
+`avoid_catching_errors`
+is too strict, the distinction between `Error` and `Exception` is followed
+closely in the SDK but is impractical to follow everywhere.
+
+`avoid_classes_with_only_static_members`
+is too strict, Effective Dart explicitly calls out some cases (constants,
+enum-like types) where it makes sense to violate this lint.
+
+`avoid_double_and_int_checks`
+only applies to web, but there is currently no mechanism for enabling a lint
+on web code only.
+
+`avoid_equals_and_hashcode_on_mutable_classes`
+would require the `@immutable` annotation to be consistently and correctly
+used everywhere.
+
+`avoid_print`
+is too strict, it's okay to `print` in some code.
+
+`avoid_returning_null`
+will be obsoleted by NNBD.
+
+`avoid_returning_this`
+has occasional false positives, and adds little value as the cascade operator
+for fluent interfaces in Dart is already very popular.
+
+`avoid_slow_async_io`
+gives wrong advice if the underlying filesystem has unusual properties, for
+example a network mount.
+
+`avoid_void_async`
+prevents a valid style where an asynchronous method has a `void` return type
+to indicate that nobody should `await` for the result.
+
+`cancel_subscriptions`
+has false positives when you use a utility method or class to call `cancel`.
+
+`constant_identifier_names`
+is too strict as it does not support the exceptions allowed in Effective Dart
+for use of ALL_CAPS.
 
 `control_flow_in_finally`
 does not offer enough value: people are unlikely to do this by accident,
 and there are occasional valid uses.
 
+`directives_ordering`
+would enforce a slightly different ordering to that used by IntelliJ and other
+tools using the analyzer.
+
 `empty_statements`
 is superfluous, enforcing use of `dartfmt` is sufficient to make empty
  statements obvious.
 
+`flutter_style_todos`
+is for Flutter SDK internal use, see note about Flutter SDK style below.
+
+`invariant_booleans`
+is experimental.
+
+`join_return_with_assignment`
+does not reflect common usage.
+
+`parameter_assignments`
+does not reflect common usage, and will cause particular problems with NNBD
+code.
+
+`prefer_assert_in_initializer_lists`
+does not reflect common usage.
+
+`prefer_asserts_with_message`
+is too strict; some asserts do not benefit from documentation.
+
 `prefer_bool_in_asserts`
  is obsolete in Dart 2; bool is required in asserts.
 
+`prefer_const_constructors`
+would add a lot of noise to code now that `new` is optional.
+
+`prefer_constructors_over_static_methods`
+is too strict, in some cases static methods are better.
+
+`prefer_double_quotes`
+does not reflect common usage.
+
 `prefer_final_locals`
-does not reflect standard usage.
+does not reflect common usage.
 
 `throw_in_finally`
 does not offer enough value: people are unlikely to do this by accident,
