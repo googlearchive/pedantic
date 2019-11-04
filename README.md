@@ -114,6 +114,10 @@ on web code only.
 would require the `@immutable` annotation to be consistently and correctly
 used everywhere.
 
+`avoid_js_rounded_ints`
+only applies to web, but there is currently no mechanism for enabling a lint
+on web code only.
+
 `avoid_print`
 is too strict, it's okay to `print` in some code.
 
@@ -134,6 +138,9 @@ to indicate that nobody should `await` for the result.
 
 `cancel_subscriptions`
 has false positives when you use a utility method or class to call `cancel`.
+
+`close_sinks`
+has false positives when you use a utility method or class to call `close`.
 
 `constant_identifier_names`
 is too strict as it does not support the exceptions allowed in Effective Dart
@@ -160,11 +167,15 @@ is experimental.
 `join_return_with_assignment`
 does not reflect common usage.
 
+`one_member_abstracts`
+is too strict, classes might implement more than one such abstract class and
+there is no equivalent way to do this using functions.
+
 `parameter_assignments`
 does not reflect common usage, and will cause particular problems with NNBD
 code.
 
-`prefer_assert_in_initializer_lists`
+`prefer_asserts_in_initializer_lists`
 does not reflect common usage.
 
 `prefer_asserts_with_message`
@@ -176,13 +187,25 @@ is too strict; some asserts do not benefit from documentation.
 `prefer_const_constructors`
 would add a lot of noise to code now that `new` is optional.
 
+`prefer_const_literals_to_create_immutables`
+is too strict, requiring `const` everywhere adds noise.
+
 `prefer_constructors_over_static_methods`
 is too strict, in some cases static methods are better.
 
 `prefer_double_quotes`
 does not reflect common usage.
 
+`prefer_final_in_for_each`
+does not reflect common usage.
+
 `prefer_final_locals`
+does not reflect common usage.
+
+`prefer_foreach`
+is too strict; `forEach` is not always an improvement.
+
+`prefer_int_literals`
 does not reflect common usage.
 
 `throw_in_finally`
