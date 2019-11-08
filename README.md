@@ -114,6 +114,9 @@ on web code only.
 would require the `@immutable` annotation to be consistently and correctly
 used everywhere.
 
+`avoid_field_initializers_in_const_classes`
+does not offer a clear readability benefit.
+
 `avoid_js_rounded_ints`
 only applies to web, but there is currently no mechanism for enabling a lint
 on web code only.
@@ -187,6 +190,9 @@ is too strict; some asserts do not benefit from documentation.
 `prefer_const_constructors`
 would add a lot of noise to code now that `new` is optional.
 
+`prefer_const_constructors_in_immutables`
+does not often apply as `@immutable` is not widely used.
+
 `prefer_const_literals_to_create_immutables`
 is too strict, requiring `const` everywhere adds noise.
 
@@ -195,6 +201,9 @@ is too strict, in some cases static methods are better.
 
 `prefer_double_quotes`
 does not reflect common usage.
+
+`prefer_expression_function_bodies`
+is too strict, braces look better for long expressions.
 
 `prefer_final_in_for_each`
 does not reflect common usage.
@@ -207,6 +216,37 @@ is too strict; `forEach` is not always an improvement.
 
 `prefer_int_literals`
 does not reflect common usage.
+
+`prefer_typing_uninitialized_variables`
+will be obsoleted by NNBD, which comes with type inference for uninitialized
+variables.
+
+`literal_only_boolean_expressions`
+does not offer enough value: such expressions are easily spotted and so hard
+to add by accident.
+
+`no_adjacent_strings_in_list`
+does not offer enough value: adjacent strings in lists are easily spotted
+when the code is formatted with `dartfmt`.
+
+`sort_constructors_first`
+does not reflect common usage.
+
+`sort_unnamed_constructors_first`
+is too strict, people are free to choose the best constructor ordering.
+
+`test_types_in_equals`
+does not offer enough value: there are plenty of other mistakes possible in
+`operator ==` implementations. It's better to use codegen.
+
+`unnecessary_null_aware_assignments`
+does not offer enough value: this is hard to do by mistake, and harmless.
+
+`use_setters_to_change_properties`
+is too strict: it can't detect when something is conceptually a property.
+
+`use_to_and_if_as_applicable`
+is too strict: it can't detect when the style rule actually applies.
 
 `throw_in_finally`
 does not offer enough value: people are unlikely to do this by accident,
