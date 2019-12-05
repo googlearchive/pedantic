@@ -1,4 +1,47 @@
+## 1.9.0
+
+- Enforce 17 new lint rules:
+
+  - [`always_declare_return_types`]
+  - [`always_require_non_null_named_parameters`]
+  - [`annotate_overrides`]
+  - [`avoid_null_checks_in_equality_operators`]
+  - [`camel_case_extensions`]
+  - [`omit_local_variable_types`]
+  - [`prefer_adjacent_string_concatenation`]
+  - [`prefer_collection_literals`]
+  - [`prefer_conditional_assignment`]
+  - [`prefer_final_fields`]
+  - [`prefer_for_elements_to_map_fromIterable`]
+  - [`prefer_generic_function_type_aliases`]
+  - [`prefer_if_null_operators`]
+  - [`prefer_single_quotes`]
+  - [`prefer_spread_collections`]
+  - [`unnecessary_this`]
+  - [`use_function_type_syntax_for_parameters`]
+
+- Mark a number of lints unused, see `README.md` for details.
+
+[`always_declare_return_types`]: https://dart-lang.github.io/linter/lints/always_declare_return_types.html
+[`always_require_non_null_named_parameters`]: https://dart-lang.github.io/linter/lints/always_require_non_null_named_parameters.html
+[`annotate_overrides`]: https://dart-lang.github.io/linter/lints/annotate_overrides.html
+[`avoid_null_checks_in_equality_operators`]: https://dart-lang.github.io/linter/lints/avoid_null_checks_in_equality_operators.html
+[`camel_case_extensions`]: https://dart-lang.github.io/linter/lints/camel_case_extensions.html
+[`omit_local_variable_types`]: https://dart-lang.github.io/linter/lints/omit_local_variable_types.html
+[`prefer_adjacent_string_concatenation`]: https://dart-lang.github.io/linter/lints/prefer_adjacent_string_concatenation.html
+[`prefer_collection_literals`]: https://dart-lang.github.io/linter/lints/prefer_collection_literals.html
+[`prefer_conditional_assignment`]: https://dart-lang.github.io/linter/lints/prefer_conditional_assignment.html
+[`prefer_final_fields`]: https://dart-lang.github.io/linter/lints/prefer_final_fields.html
+[`prefer_for_elements_to_map_fromIterable`]: https://dart-lang.github.io/linter/lints/prefer_for_elements_to_map_fromIterable.html
+[`prefer_generic_function_type_aliases`]: https://dart-lang.github.io/linter/lints/prefer_generic_function_type_aliases.html
+[`prefer_if_null_operators`]: https://dart-lang.github.io/linter/lints/prefer_if_null_operators.html
+[`prefer_single_quotes`]: https://dart-lang.github.io/linter/lints/prefer_single_quotes.html
+[`prefer_spread_collections`]: https://dart-lang.github.io/linter/lints/prefer_spread_collections.html
+[`unnecessary_this`]: https://dart-lang.github.io/linter/lints/unnecessary_this.html
+[`use_function_type_syntax_for_parameters`]: https://dart-lang.github.io/linter/lints/use_function_type_syntax_for_parameters.html
+
 ## 1.8.0
+
 - Enforce three new lint rules:
 
   - [`prefer_iterable_whereType`]
