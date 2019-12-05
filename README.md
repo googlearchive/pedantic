@@ -1,5 +1,7 @@
 # pedantic
 
+[![Pub](https://img.shields.io/pub/v/pedantic.svg)](https://pub.dev/packages/pedantic)
+
 This package serves three purposes:
 
  - It documents how Dart static analysis is used internally at Google,
