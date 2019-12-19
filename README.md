@@ -112,7 +112,7 @@ enum-like types) where it makes sense to violate this lint.
 only applies to web, but there is currently no mechanism for enabling a lint
 on web code only.
 
-`avoid_equals_and_hashcode_on_mutable_classes`
+`avoid_equals_and_hash_code_on_mutable_classes`
 would require the `@immutable` annotation to be consistently and correctly
 used everywhere.
 
@@ -247,7 +247,7 @@ does not offer enough value: this is hard to do by mistake, and harmless.
 `use_setters_to_change_properties`
 is too strict: it can't detect when something is conceptually a property.
 
-`use_to_and_if_as_applicable`
+`use_to_and_as_if_applicable`
 is too strict: it can't detect when the style rule actually applies.
 
 `throw_in_finally`
