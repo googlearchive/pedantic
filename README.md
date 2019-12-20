@@ -172,6 +172,14 @@ is experimental.
 `join_return_with_assignment`
 does not reflect common usage.
 
+`literal_only_boolean_expressions`
+does not offer enough value: such expressions are easily spotted and so hard
+to add by accident.
+
+`no_adjacent_strings_in_list`
+does not offer enough value: adjacent strings in lists are easily spotted
+when the code is formatted with `dartfmt`.
+
 `one_member_abstracts`
 is too strict, classes might implement more than one such abstract class and
 there is no equivalent way to do this using functions.
@@ -223,14 +231,6 @@ does not reflect common usage.
 will be obsoleted by NNBD, which comes with type inference for uninitialized
 variables.
 
-`literal_only_boolean_expressions`
-does not offer enough value: such expressions are easily spotted and so hard
-to add by accident.
-
-`no_adjacent_strings_in_list`
-does not offer enough value: adjacent strings in lists are easily spotted
-when the code is formatted with `dartfmt`.
-
 `sort_constructors_first`
 does not reflect common usage.
 
@@ -241,6 +241,10 @@ is too strict, people are free to choose the best constructor ordering.
 does not offer enough value: there are plenty of other mistakes possible in
 `operator ==` implementations. It's better to use codegen.
 
+`throw_in_finally`
+does not offer enough value: people are unlikely to do this by accident,
+and there are occasional valid uses.
+
 `unnecessary_null_aware_assignments`
 does not offer enough value: this is hard to do by mistake, and harmless.
 
@@ -250,9 +254,6 @@ is too strict: it can't detect when something is conceptually a property.
 `use_to_and_as_if_applicable`
 is too strict: it can't detect when the style rule actually applies.
 
-`throw_in_finally`
-does not offer enough value: people are unlikely to do this by accident,
-and there are occasional valid uses.
 
 Note on Flutter SDK Style: some lints were created specifically to support
 Flutter SDK development. Flutter app developers should instead use standard
