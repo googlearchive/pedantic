@@ -11,10 +11,10 @@ This package serves three purposes:
  - It contains occasional small snippets of Dart code that are used in
    implementing those best practices.
 
-Note that everything here fits within the guidelines set out in
+Most of the recommended lints directly implement the guidelines set out in
 [Effective Dart](https://www.dartlang.org/guides/language/effective-dart).
-You could think of that document as the _design_ and this package as one
-possible partial _implementation_.
+In a few cases the lints are stricter than the style guide for the sake of
+consistency. Details [below](#stricter-than-effective-dart).
 
 See
 [this Medium article](https://medium.com/dartlang/pedantic-dart-1c7d365510de)
@@ -41,6 +41,24 @@ Here is how static analysis is used internally at Google:
 
 The currently enabled lints can be found in
 [analysis_options.1.9.0.yaml](https://github.com/dart-lang/pedantic/blob/master/lib/analysis_options.1.9.0.yaml).
+
+## Stricter than Effective Dart
+
+Here are the important places where `pedantic` is stricter than Effective Dart:
+
+`annotate_overrides` is stricter; Effective Dart says nothing about
+`@override`.
+
+`omit_local_variable_types` is stricter; Effective Dart only says to
+[avoid](https://dart.dev/guides/language/effective-dart/design#avoid-type-annotating-initialized-local-variables)
+type annotating initialized local variables.
+
+`prefer_single_quotes` is stricter; Effective Dart says nothing about
+single vs double quotes.
+
+`use_function_type_syntax` is stricter; Effective Dart only says to
+[consider](https://dart.dev/guides/language/effective-dart/design#consider-using-function-type-syntax-for-parameters)
+using the new syntax.
 
 ## Using the Lints
 
