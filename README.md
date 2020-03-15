@@ -12,7 +12,7 @@ This package serves three purposes:
    implementing those best practices.
 
 Most of the recommended lints directly implement the guidelines set out in
-[Effective Dart](https://www.dartlang.org/guides/language/effective-dart).
+[Effective Dart](https://dart.dev/guides/language/effective-dart).
 In a few cases the lints are stricter than the style guide for the sake of
 consistency. Details [below](#stricter-than-effective-dart).
 
