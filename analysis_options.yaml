@@ -6,3 +6,6 @@
 # including a list of lints that are intentionally _not_ enforced.
 
 include: lib/analysis_options.yaml
+analyzer:
+  enable-experiment:
+    - non-nullable
