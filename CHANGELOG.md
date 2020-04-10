@@ -1,3 +1,7 @@
+## 1.10.0-dev
+
+- Migrate to null safety.
+
 ## 1.9.0
 
 - Enforce 17 new lint rules:
