@@ -1,8 +1,8 @@
 name: pedantic
-version: 1.10.0-dev
+version: 1.9.0-nnbd
 description: >-
   The Dart analyzer settings and best practices used internally at Google.
 homepage: https://github.com/dart-lang/pedantic
 
 environment:
-  sdk: '>=2.8.0-dev <3.0.0'
+  sdk: '>=2.8.0-dev <2.8.0'
