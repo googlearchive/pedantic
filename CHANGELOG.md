@@ -1,3 +1,10 @@
+## 1.9.1
+
+`package:meta` is now the recommended place to get the `unawaited` method.
+
+`pedantic` now exports that implementation, so the two are compatible.
+`unawaited` will be removed from `pedantic` in version `2.0.0`.
+
 ## 1.9.0
 
 - Enforce 17 new lint rules:
