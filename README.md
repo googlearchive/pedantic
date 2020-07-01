@@ -1,5 +1,3 @@
-# pedantic
-
 [![Pub](https://img.shields.io/pub/v/pedantic.svg)](https://pub.dev/packages/pedantic)
 
 This package serves three purposes:
