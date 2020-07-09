@@ -1,3 +1,7 @@
+## 1.9.2
+
+Revert changes in `1.9.1` due to problems moving `unawaited` to `meta`.
+
 ## 1.9.1
 
 `package:meta` is now the recommended place to get the `unawaited` method.
