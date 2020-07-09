@@ -6,3 +6,6 @@ homepage: https://github.com/dart-lang/pedantic
 
 environment:
   sdk: '>=2.1.1 <3.0.0'
+
+dependencies:
+  meta: ^1.2.2
