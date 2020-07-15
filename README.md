@@ -29,8 +29,8 @@ Here is how static analysis is used internally at Google:
      separately on a case by case basis.
    - `unused_element`, `unused_field` and `unused_local_variable` are allowed.
    - When a new SDK version adds new errors, warnings or hints, we either clean
-     up everything before switching SDK version or maintain a whitelist of
-     allowed violations so it can be gradually cleaned up.
+     up everything before switching SDK version or maintain a list of allowed
+     violations so it can be gradually cleaned up.
  - Lints are considered and enabled on a case by case basis. When enabling a
    lint we first clean up all pre-existing violations. After it's enabled, any
    attempt to check in a further violation will be blocked.
