@@ -1,3 +1,7 @@
+## 1.10.0-nnbd
+
+- Migrate to null safety.
+
 ## 1.9.2
 
 Revert changes in `1.9.1` due to problems moving `unawaited` to `meta`.
