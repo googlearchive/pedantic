@@ -1,4 +1,4 @@
-## 1.10.0-nnbd
+## 1.10.0-nullsafety
 
 - Migrate to null safety.
 
