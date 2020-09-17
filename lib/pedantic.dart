@@ -22,4 +22,4 @@ import 'dart:async' show Future;
 ///   unawaited(log('Preferences saved!'));
 /// }
 /// ```
-void unawaited(Future<void>? future) {}
+void unawaited<T>(Future<T>? future) {}
