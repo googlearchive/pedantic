@@ -1,3 +1,7 @@
+## 2.10.0-nullsafety.1
+
+- Allow 2.10 stable and 2.11.0 dev SDK versions.
+
 ## 1.10.0-nullsafety
 
 - Migrate to null safety.
