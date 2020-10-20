@@ -2,8 +2,6 @@
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
-import 'dart:async' show Future;
-
 /// Indicates to tools that [future] is intentionally not `await`-ed.
 ///
 /// In an `async` context, it is normally expected that all [Future]s are
