@@ -2,7 +2,7 @@ name: pedantic
 version: 1.10.0-nullsafety.2
 description: >-
   The Dart analyzer settings and best practices used internally at Google.
-homepage: https://github.com/dart-lang/pedantic
+homepage: https://github.com/google/pedantic
 
 environment:
   # This must remain a tight constraint until nnbd is stable
