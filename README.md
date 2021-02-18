@@ -258,10 +258,6 @@ users prefer `?:` over `if`/`else`.
 `prefer_int_literals`
 does not reflect common usage.
 
-`prefer_typing_uninitialized_variables`
-will be obsoleted by sound null safety, which comes with type inference for
-uninitialized variables.
-
 `sort_constructors_first`
 does not reflect common usage.
 
