@@ -1,3 +1,31 @@
+## 1.11.0
+
+- Enforce 8 new lint rules:
+  - [`avoid_single_cascade_in_expression_statements`]
+  - [`await_only_futures`]
+  - [`prefer_inlined_adds`]
+  - [`sort_child_properties_last`]
+  - [`unnecessary_brace_in_string_interps`]
+  - [`unnecessary_getters_setters`]
+  - [`unsafe_html`]
+  - [`use_full_hex_values_for_flutter_colors`]
+
+- Mark a number of lints unused, see `README.md` for details.
+
+- Remove [`avoid_empty_else`] as it is redundant when
+[`curly_braces_in_control_structures`] is also enabled.
+
+[`avoid_empty_else`]: https://dart-lang.github.io/linter/lints/avoid_empty_else.html
+[`avoid_single_cascade_in_expression_statements`]: https://dart-lang.github.io/linter/lints/avoid_single_cascade_in_expression_statements.html
+[`await_only_futures`]: https://dart-lang.github.io/linter/lints/await_only_futures.html
+[`curly_braces_in_control_structures`]: https://dart-lang.github.io/linter/lints/curly_braces_in_flow_control_structures.html
+[`prefer_inlined_adds`]: https://dart-lang.github.io/linter/lints/prefer_inlined_adds.html
+[`sort_child_properties_last`]: https://dart-lang.github.io/linter/lints/sort_child_properties_last.html
+[`unnecessary_brace_in_string_interps`]: https://dart-lang.github.io/linter/lints/unnecessary_brace_in_string_interps.html
+[`unnecessary_getters_setters`]: https://dart-lang.github.io/linter/lints/unnecessary_getters_setters.html
+[`unsafe_html`]: https://dart-lang.github.io/linter/lints/unsafe_html.html
+[`use_full_hex_values_for_flutter_colors`]: https://dart-lang.github.io/linter/lints/use_full_hex_values_for_flutter_colors.html
+
 ## 1.10.0
 
 * Stable null safety release.

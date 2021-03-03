@@ -38,7 +38,7 @@ Here is how static analysis is used internally at Google:
 ## Enabled Lints
 
 The currently enabled lints can be found in
-[analysis_options.1.9.0.yaml](https://github.com/dart-lang/pedantic/blob/master/lib/analysis_options.1.9.0.yaml).
+[analysis_options.1.11.0.yaml](https://github.com/dart-lang/pedantic/blob/master/lib/analysis_options.1.11.0.yaml).
 
 ## Stricter than Effective Dart
 
@@ -65,11 +65,11 @@ To use the lints add a dependency in your `pubspec.yaml`:
 ```yaml
 # If you use `package:pedantic/pedantic.dart`, add a normal dependency.
 dependencies:
-  pedantic: ^1.9.0
+  pedantic: ^1.11.0
 
 # Or, if you just want `analysis_options.yaml`, it can be a dev dependency.
 dev_dependencies:
-  pedantic: ^1.9.0
+  pedantic: ^1.11.0
 ```
 
 then, add an include in your `analysis_options.yaml`. If you want to always
@@ -86,7 +86,7 @@ fail whenever a new version of `package:pedantic` is released. To avoid this,
 specify a specific version of `analysis_options.yaml` instead:
 
 ```yaml
-include: package:pedantic/analysis_options.1.9.0.yaml
+include: package:pedantic/analysis_options.1.11.0.yaml
 ```
 
 ## Unused Lints
@@ -128,6 +128,9 @@ enum-like types) where it makes sense to violate this lint.
 only applies to web, but there is currently no mechanism for enabling a lint
 on web code only.
 
+`avoid_empty_else`
+redundant when `curly_braces_in_control_structures` is also enabled.
+
 `avoid_equals_and_hash_code_on_mutable_classes`
 would require the `@immutable` annotation to be consistently and correctly
 used everywhere.
@@ -143,7 +146,7 @@ on web code only.
 is too strict, it's okay to `print` in some code.
 
 `avoid_returning_null`
-will be obsoleted by NNBD.
+will be obsoleted by sound null safety.
 
 `avoid_returning_this`
 has occasional false positives, and adds little value as the cascade operator
@@ -160,6 +163,9 @@ to indicate that nobody should `await` for the result.
 `cancel_subscriptions`
 has false positives when you use a utility method or class to call `cancel`.
 
+`cascade_invocations`
+does not reflect common usage.
+
 `close_sinks`
 has false positives when you use a utility method or class to call `close`.
 
@@ -174,6 +180,9 @@ and there are occasional valid uses.
 `directives_ordering`
 would enforce a slightly different ordering to that used by IntelliJ and other
 tools using the analyzer.
+
+`diagnose_describe_all_properties`
+requires too much maintenance for most codebases.
 
 `empty_statements`
 is superfluous, enforcing use of `dartfmt` is sufficient to make empty
@@ -200,8 +209,11 @@ when the code is formatted with `dartfmt`.
 is too strict, classes might implement more than one such abstract class and
 there is no equivalent way to do this using functions.
 
+`only_throw_errors`
+does not reflect common usage.
+
 `parameter_assignments`
-does not reflect common usage, and will cause particular problems with NNBD
+does not reflect common usage, and will cause particular problems with null safe
 code.
 
 `prefer_asserts_in_initializer_lists`
@@ -240,12 +252,11 @@ does not reflect common usage.
 `prefer_foreach`
 is too strict; `forEach` is not always an improvement.
 
+`prefer_if_elements_to_conditional_expressions`
+users prefer `?:` over `if`/`else`.
+
 `prefer_int_literals`
 does not reflect common usage.
-
-`prefer_typing_uninitialized_variables`
-will be obsoleted by NNBD, which comes with type inference for uninitialized
-variables.
 
 `sort_constructors_first`
 does not reflect common usage.
@@ -266,6 +277,9 @@ does not offer enough value: this is hard to do by mistake, and harmless.
 
 `use_setters_to_change_properties`
 is too strict: it can't detect when something is conceptually a property.
+
+`use_string_buffers`
+does not improve performance on web.
 
 `use_to_and_as_if_applicable`
 is too strict: it can't detect when the style rule actually applies.
