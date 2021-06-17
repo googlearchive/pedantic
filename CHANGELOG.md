@@ -1,3 +1,7 @@
+## 1.11.1
+
+- Deprecated. Please use `package:lints` or `package:flutter_lints` instead.
+
 ## 1.11.0
 
 - Enforce 8 new lint rules:
